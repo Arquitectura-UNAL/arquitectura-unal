@@ -618,7 +618,7 @@ function mostrarMensajeAutor() {
       </div>
 
       <p class="toast-autor__mensaje">
-        ¡Hola! Desarrollé este portal con el propósito de apoyar, guiar y facilitar la vida universitaria de todos los estudiantes de <strong>Arquitectura</strong>. Cuentan con mi total respaldo desde la representación estudiantil de Sistemas para seguir construyendo herramientas digitales que fortalezcan nuestra vida académica en la Facultad de Arquitectura y en la Sede Medellín.
+        ¡Hola! Soy <strong class="toast-autor__destacado">Santiago Escobar</strong>. Creé esta plataforma para hacerte la vida en la U mucho más fácil.<br>Si encuentras algún error o tienes ideas para mejorarla, ¡escríbeme!
       </p>
 
       <div class="toast-autor__pildoras">
@@ -636,7 +636,7 @@ function mostrarMensajeAutor() {
         </a>
       </div>
 
-      <button class="toast-autor__btn-ok" id="toast-autor-ok" type="button">¡ENTENDIDO!</button>
+      <button class="toast-autor__btn-ok" id="toast-autor-ok" type="button">¡Entendido!</button>
     </div>`;
 
   document.body.appendChild(toast);
