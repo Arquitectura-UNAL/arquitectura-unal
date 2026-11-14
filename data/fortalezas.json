@@ -1,0 +1,66 @@
+{
+  "titulo": "Fortalezas Únicas de Nuestra Carrera",
+  "intro": "El pregrado en Arquitectura de la Universidad Nacional de Colombia Sede Medellín es el referente histórico y vanguardista de la formación arquitectónica en el país. Conoce los diferenciales proyectuales, de hábitat e investigación que marcan nuestro sello de excelencia.",
+  "items": [
+    {
+      "id": "talleres-proyectos-bloque24",
+      "tipo": "INFRAESTRUCTURA PROYECTUAL Y TRADICIÓN",
+      "badge": "Bloque 24 · Cuna de Vanguardia",
+      "sello": "Talleres Verticales e Integrales",
+      "titulo": "Talleres de Proyectos y Crítica Abierta",
+      "ubicacion": "Bloque 24 · Campus El Volador",
+      "destacado": "Nuestra formación tiene como columna vertebral 9 semestres de talleres integrales de proyectos con mesas de dibujo continuo, salas de crítica colectiva y espacios de interacción entre niveles que enriquecen la cultura de diseño.",
+      "descripcion": "Instalaciones diseñadas expresamente para el quehacer arquitectónico, dotadas de salas de modelado digital, corte láser, biblioteca patrimonial y talleres de maquetación en el corazón del Campus El Volador.",
+      "puntos": [
+        "9 niveles proyectuales obligatorios más rutas de énfasis aplicadas",
+        "Salas de crítica colectiva y sustentación pública con jurados invitados",
+        "Laboratorios de arquitectura digital, sistemas BIM y modelamiento SIG",
+        "Acceso directo a la Biblioteca Especializada de Arquitectura y Urbanismo"
+      ],
+      "enlace": {
+        "texto": "Ver Pregrado en Arquitectura UNAL",
+        "url": "https://arquitectura.medellin.unal.edu.co/pregrado-de-arquitectura"
+      },
+      "icono": "materiales",
+      "color": "var(--celeste-vivido)"
+    },
+    {
+      "id": "escuela-habitat",
+      "tipo": "INVESTIGACIÓN SOCIAL Y TERRITORIAL",
+      "badge": "Referente de Ciudad · CEHAP",
+      "sello": "Unidad de Documentación Única",
+      "titulo": "Escuela del Hábitat y Unidad de Documentación",
+      "ubicacion": "Bloque 24, Of. 421 · Facultad de Arquitectura",
+      "destacado": "La carrera se potencia con la prestigiosa Escuela del Hábitat (CEHAP) y su Unidad de Documentación única en la ciudad, un centro de pensamiento ampliamente referenciado a nivel nacional e internacional.",
+      "descripcion": "Articula la formación técnica y proyectual del arquitecto con el impacto social, la planificación territorial y el desarrollo de comunidades:",
+      "pilares": [
+        {
+          "titulo": "Perspectiva interdisciplinaria",
+          "detalle": "Estudia el hábitat desde una mirada integral entre arquitectura, ciencias sociales, diseño urbano y ecología del paisaje."
+        },
+        {
+          "titulo": "Vivienda y territorio",
+          "detalle": "Investiga a profundidad la vivienda digna y su relación directa con el ordenamiento territorial y ambiental."
+        },
+        {
+          "titulo": "Producción social del espacio",
+          "detalle": "Trabaja en la producción comunitaria del hábitat, tecnologías apropiadas y procesos participativos."
+        },
+        {
+          "titulo": "Ordenamiento y justicia socioespacial",
+          "detalle": "Aborda la planificación territorial con criterios de equidad, sostenibilidad y derecho a la ciudad."
+        },
+        {
+          "titulo": "Procesos comunitarios y políticas públicas",
+          "detalle": "Participa activamente en procesos comunitarios, investigación aplicada y formulación de políticas públicas urbanas."
+        }
+      ],
+      "enlace": {
+        "texto": "Conoce la Escuela del Hábitat",
+        "url": "https://arquitectura.medellin.unal.edu.co/escuelas/escuelas"
+      },
+      "icono": "habitat",
+      "color": "var(--naranja)"
+    }
+  ]
+}

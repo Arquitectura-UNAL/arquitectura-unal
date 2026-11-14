@@ -1,0 +1,128 @@
+{
+  "componentes": [
+    {
+      "id": "fundamentacion",
+      "nombre": "Fundamentación",
+      "color": "#015E97",
+      "descripcion": "Bases conceptuales, instrumentales, históricas y urbanísticas que sustentan la formación arquitectónica (Representación, Tecnología, Historia y Teoría, y Urbanística)."
+    },
+    {
+      "id": "disciplinar",
+      "nombre": "Formación disciplinar o profesional",
+      "color": "#132A49",
+      "descripcion": "Eje medular de la carrera: Talleres integrales de Proyectos (1 a 9), tecnologías avanzadas, ciudad y territorio, seminario de investigación, énfasis optativos y trabajo de grado."
+    },
+    {
+      "id": "libre-eleccion",
+      "nombre": "Libre elección e Idiomas",
+      "color": "#E1432A",
+      "descripcion": "37 créditos de libre configuración para profundizar en áreas de interés interdisciplinar y 12 créditos de lengua extranjera (Inglés)."
+    }
+  ],
+  "agrupaciones": [
+    {
+      "id": "representacion-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Representación del Proyecto (Fundamentación)",
+      "exigidos": 8,
+      "obligatorios": 8,
+      "optativos": 0
+    },
+    {
+      "id": "tecnologia-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Tecnología (Fundamentación)",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "historia-teoria-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Historia y Teoría (Fundamentación)",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "urbanistica-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Urbanística (Fundamentación)",
+      "exigidos": 2,
+      "obligatorios": 2,
+      "optativos": 0
+    },
+    {
+      "id": "proyectos",
+      "componente": "disciplinar",
+      "nombre": "Proyectos Arquitectónicos (Talleres 1 a 9)",
+      "exigidos": 54,
+      "obligatorios": 54,
+      "optativos": 0
+    },
+    {
+      "id": "tecnologia-disciplinar",
+      "componente": "disciplinar",
+      "nombre": "Tecnología del Proyecto (Disciplinar)",
+      "exigidos": 13,
+      "obligatorios": 13,
+      "optativos": 0
+    },
+    {
+      "id": "historia-teoria-disciplinar",
+      "componente": "disciplinar",
+      "nombre": "Historia, Teoría e Investigación (Disciplinar)",
+      "exigidos": 8,
+      "obligatorios": 8,
+      "optativos": 0
+    },
+    {
+      "id": "urbanistica-disciplinar",
+      "componente": "disciplinar",
+      "nombre": "Urbanística / Ciudad y Territorio (Disciplinar)",
+      "exigidos": 8,
+      "obligatorios": 8,
+      "optativos": 0
+    },
+    {
+      "id": "representacion-disciplinar",
+      "componente": "disciplinar",
+      "nombre": "Representación del Proyecto (Disciplinar)",
+      "exigidos": 10,
+      "obligatorios": 10,
+      "optativos": 0
+    },
+    {
+      "id": "trabajo-de-grado",
+      "componente": "disciplinar",
+      "nombre": "Trabajo de Grado",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "optativas-disciplinares",
+      "componente": "disciplinar",
+      "nombre": "Optativas Disciplinar/Profesional (Rutas de Énfasis)",
+      "exigidos": 20,
+      "obligatorios": 0,
+      "optativos": 20
+    },
+    {
+      "id": "libre-eleccion-materias",
+      "componente": "libre-eleccion",
+      "nombre": "Asignaturas de Libre Elección (L.E.)",
+      "exigidos": 37,
+      "obligatorios": 0,
+      "optativos": 37
+    },
+    {
+      "id": "idiomas",
+      "componente": "libre-eleccion",
+      "nombre": "Formación en Idioma Extranjero (Inglés I a IV)",
+      "exigidos": 12,
+      "obligatorios": 12,
+      "optativos": 0
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="fav-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#015E97"/>
+      <stop offset="100%" stop-color="#132A49"/>
+    </linearGradient>
+  </defs>
+  <!-- Base circular -->
+  <circle cx="32" cy="32" r="30" fill="url(#fav-bg)" stroke="#F09A23" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#F1ECD6" stroke-width="0.75" stroke-dasharray="2,2"/>
+
+  <!-- Estructura arquitectónica "A" -->
+  <polygon points="32,10 47,48 40,48 32,24 24,48 17,48" fill="#F1ECD6"/>
+  <polygon points="32,10 47,48 40,48 32,24" fill="#F09A23"/>
+  <!-- Viga de enlace en rojo -->
+  <rect x="22" y="34" width="20" height="5" rx="1" fill="#E1432A"/>
+  <!-- Atrio central -->
+  <polygon points="32,18 37,30 27,30" fill="#132A49"/>
+  <!-- Base técnica -->
+  <line x1="14" y1="52" x2="50" y2="52" stroke="#F1ECD6" stroke-width="2"/>
+  <circle cx="14" cy="52" r="1.5" fill="#E1432A"/>
+  <circle cx="50" cy="52" r="1.5" fill="#E1432A"/>
+</svg>

@@ -1,0 +1,290 @@
+{
+  "nombre": "Arquitectura",
+  "universidad": "Universidad Nacional de Colombia",
+  "sede": "Medellín",
+  "facultad": "Facultad de Arquitectura",
+  "escuela": "Escuela de Arquitectura",
+  "lema": "Facultad de Arquitectura · Sede Medellín",
+  "descripcion": [
+    "El pregrado en Arquitectura de la Universidad Nacional de Colombia Sede Medellín concibe la ciencia del proyecto como la columna vertebral de la enseñanza y la práctica proyectual. Sitúa la formación en la convergencia dinámica del «saber» y el «saber hacer», articulando teoría, estética, técnica constructiva, bioclimática, modelamiento digital y profunda sensibilidad social y ambiental.",
+    "El(la) Arquitecto(a) de la UNAL Medellín está capacitado(a) para proyectar, planificar, gestionar y transformar el hábitat y el territorio contemporáneo. Con una sólida base humanística, científica y artística, responde con criterio crítico e innovador a las demandas del entorno urbano, rural y patrimonial de la región y el país."
+  ],
+  "rutas": [
+    {
+      "id": "proyectacion-arquitectonica-diseno-urbano",
+      "nombre": "Proyectación Arquitectónica y Diseño Urbano",
+      "descripcion": "Desarrollo de la aptitud proyectual en proyectos de alta complejidad, espacio público, vivienda colectiva y planificación urbano-regional con enfoque contemporáneo.",
+      "icono": "gestion",
+      "color": "#132A49",
+      "codigo": "TRAYECTORIA · 01",
+      "subtitulo": "Talleres integrales de proyectos, espacio público y hábitat",
+      "tags": [
+        "Talleres Proyectuales 1 al 9",
+        "Proyectación Urbanística",
+        "Arquitectura de la Vivienda",
+        "Espacio Público y Ciudad"
+      ]
+    },
+    {
+      "id": "arquitectura-bioclimatica-sostenibilidad",
+      "nombre": "Arquitectura Bioclimática y Sostenibilidad Ambiental",
+      "descripcion": "Diseño pasivo, instrumentación ambiental, eficiencia energética y confort higrotérmico aplicados al hábitat tropical y la adaptación al cambio climático.",
+      "icono": "saneamiento",
+      "color": "#015E97",
+      "codigo": "TRAYECTORIA · 02",
+      "subtitulo": "Geo-clima, eficiencia energética y tecnologías ambientales",
+      "tags": [
+        "Arquitectura Bioclimática 1 a 4",
+        "Instrumentación Ambiental",
+        "Eco-diseño y Simulación Solar",
+        "Confort Térmico y Lumínico"
+      ]
+    },
+    {
+      "id": "arquitectura-digital-bim-sig",
+      "nombre": "Arquitectura Digital, Modelamiento BIM y SIG",
+      "descripcion": "Gestión informática de modelos constructivos, diseño paramétrico, prototipado y análisis espacial del territorio mediante sistemas de información geográfica.",
+      "icono": "ciencia",
+      "color": "#F09A23",
+      "codigo": "TRAYECTORIA · 03",
+      "subtitulo": "Metodología BIM, diseño paramétrico y geoinformática",
+      "tags": [
+        "Arquitectura Digital 1 y 2",
+        "Modelamiento Urbano con SIG",
+        "Gestión Informática de Obra",
+        "Fabricación y Prototipado 3D"
+      ]
+    },
+    {
+      "id": "historia-teoria-patrimonio",
+      "nombre": "Historia, Teoría, Crítica y Patrimonio",
+      "descripcion": "Investigación reflexiva y rigurosa en historia de la arquitectura moderna y contemporánea, memoria cultural y técnicas de intervención del patrimonio edificado.",
+      "icono": "habitat",
+      "color": "#E1432A",
+      "codigo": "TRAYECTORIA · 04",
+      "subtitulo": "Investigación proyectual, patrimonio cultural y teoría crítica",
+      "tags": [
+        "El Proyecto en la Arq. Moderna",
+        "Patrimonio, Memoria y Cultura",
+        "Gestión del Patrimonio",
+        "Seminario de Investigación"
+      ]
+    },
+    {
+      "id": "tecnologia-proyecto-a-la-obra",
+      "nombre": "Del Proyecto a la Obra y Sistemas Constructivos",
+      "descripcion": "Articulación entre el diseño conceptual y la materialización técnica: sistemas estructurales, programación, costos, patología y supervisión constructiva.",
+      "icono": "suelos",
+      "color": "#132A49",
+      "codigo": "TRAYECTORIA · 05",
+      "subtitulo": "Sistemas constructivos, patología de la edificación y obra",
+      "tags": [
+        "Del Proyecto a la Obra",
+        "Tecnología del Proyecto 1 al 6",
+        "Patología e Intervención",
+        "Costos y Programación"
+      ]
+    }
+  ],
+  "ficha": [
+    {
+      "etiqueta": "Título que otorga",
+      "valor": "Arquitecto(a)"
+    },
+    {
+      "etiqueta": "Créditos del plan",
+      "valor": "190"
+    },
+    {
+      "etiqueta": "Duración del plan",
+      "valor": "10 semestres"
+    },
+    {
+      "etiqueta": "Modalidad",
+      "valor": "Presencial"
+    },
+    {
+      "etiqueta": "Jornada",
+      "valor": "Diurna"
+    },
+    {
+      "etiqueta": "Sede y facultad",
+      "valor": "Medellín · Facultad de Arquitectura"
+    },
+    {
+      "etiqueta": "Área Curricular",
+      "valor": "Arquitectura y Urbanismo (Escuela de Arquitectura)"
+    },
+    {
+      "etiqueta": "Código SNIES",
+      "valor": "99"
+    },
+    {
+      "etiqueta": "Código SIA",
+      "valor": "2542"
+    },
+    {
+      "etiqueta": "Plan vigente",
+      "valor": "Acuerdo CF-0001 de 2024 (Consejo de Facultad de Arquitectura)"
+    }
+  ],
+  "cifras": [
+    {
+      "valor": "190",
+      "texto": "Créditos del Plan"
+    },
+    {
+      "valor": "10",
+      "texto": "Semestres"
+    },
+    {
+      "valor": "10 Años",
+      "texto": "Acreditación Alta Calidad"
+    },
+    {
+      "valor": "24",
+      "texto": "Bloque de Arquitectura"
+    }
+  ],
+  "acreditacion": {
+    "estado": "Programa Académico Acreditado de Alta Calidad · Facultad de Arquitectura",
+    "hitos": [
+      {
+        "anio": "Tradición e Historia",
+        "texto": "Fundada por el maestro Pedro Nel Gómez en los años 40, cuna de los más destacados arquitectos y urbanistas de Colombia y pionera del movimiento moderno."
+      },
+      {
+        "anio": "Acreditación de Excelencia",
+        "texto": "Máxima acreditación institucional nacional e internacional por sus rigurosos talleres de proyectos, producción científica y aporte al desarrollo del hábitat."
+      }
+    ],
+    "nota": "Para consultas reglamentarias y solicitudes, acude a la Secretaría de la Facultad de Arquitectura (Bloque 24, Campus El Volador)."
+  },
+  "fortalezas": [
+    {
+      "id": "talleres-proyectos-bloque24",
+      "tipo": "INFRAESTRUCTURA PROYECTUAL Y PATRIMONIO",
+      "badge": "Edificio Insignia · Bloque 24",
+      "sello": "Talleres Verticales e Integrales",
+      "titulo": "Talleres de Proyectos y Laboratorios Proyectuales",
+      "ubicacion": "Bloque 24 · Campus El Volador",
+      "destacado": "Espacios icónicos de taller proyectual, mesas de diseño continuo, salas de crítica y laboratorios equipados con tecnología digital y análoga para modelar a escala real.",
+      "descripcion": "El Bloque 24 reúne la tradición arquitectónica de la sede con aulas de proyectos, salas de modelado 3D, cortadoras láser y biblioteca especializada al servicio formativo.",
+      "puntos": [
+        "9 niveles continuos de Proyectos Arquitectónicos integrales",
+        "Salas de crítica colectiva y jurados de proyectos abiertos",
+        "Laboratorio de Arquitectura Digital, Modelamiento BIM y SIG",
+        "Aulas de dibujo, bocetación y prototipado físico de maquetas"
+      ],
+      "enlace": {
+        "texto": "Conoce el Pregrado de Arquitectura",
+        "url": "https://arquitectura.medellin.unal.edu.co/pregrado-de-arquitectura"
+      },
+      "icono": "materiales",
+      "color": "var(--arcilla)"
+    },
+    {
+      "id": "escuela-habitat",
+      "tipo": "INVESTIGACIÓN SOCIAL Y TERRITORIAL",
+      "badge": "Referente de Ciudad · CEHAP",
+      "sello": "Unidad de Documentación Única",
+      "titulo": "Escuela del Hábitat y Unidad de Documentación",
+      "ubicacion": "Bloque 24, Of. 421 · Facultad de Arquitectura",
+      "destacado": "La carrera se potencia con la prestigiosa Escuela del Hábitat (CEHAP) y su Unidad de Documentación única en la ciudad, un centro de pensamiento ampliamente referenciado a nivel nacional e internacional.",
+      "descripcion": "Articula la formación proyectual del arquitecto con el impacto social, la planificación territorial y el desarrollo de comunidades:",
+      "pilares": [
+        {
+          "titulo": "Perspectiva interdisciplinaria",
+          "detalle": "Estudia el hábitat desde una mirada integral entre arquitectura, ciencias sociales, urbanismo y paisaje."
+        },
+        {
+          "titulo": "Vivienda y territorio",
+          "detalle": "Investiga a profundidad la vivienda y su relación directa con el ordenamiento territorial y bioclimático."
+        },
+        {
+          "titulo": "Construcción y producción social",
+          "detalle": "Trabaja en la producción social del hábitat, tecnologías apropiadas y autogestión comunitaria."
+        },
+        {
+          "titulo": "Ordenamiento y justicia socioespacial",
+          "detalle": "Aborda la planificación territorial con criterios de equidad, sostenibilidad y derecho a la ciudad."
+        },
+        {
+          "titulo": "Procesos comunitarios y políticas públicas",
+          "detalle": "Participa activamente en procesos comunitarios, investigación aplicada y formulación de políticas públicas urbanas."
+        }
+      ],
+      "enlace": {
+        "texto": "Conoce la Escuela del Hábitat",
+        "url": "https://arquitectura.medellin.unal.edu.co/escuelas/escuelas"
+      },
+      "icono": "habitat",
+      "color": "var(--oliva)"
+    }
+  ],
+  "representantes": {
+    "carrera": {
+      "cargo": "Representación Estudiantil de Arquitectura",
+      "principal": {
+        "nombre": "Juan Manuel Zapata Usma",
+        "cargo": "Representante Estudiantil Principal",
+        "whatsapp": "+57 3023268027",
+        "whatsappEnlace": "https://wa.me/573023268027",
+        "instagram": "@aguacate._sideral",
+        "instagramEnlace": "https://www.instagram.com/aguacate._sideral/",
+        "correo": "jzapataus@unal.edu.co"
+      },
+      "suplente": {
+        "nombre": "Samuel Trejos Betancurt",
+        "cargo": "Representante Estudiantil Suplente",
+        "whatsapp": "+57 3127430226",
+        "whatsappEnlace": "https://wa.me/573127430226",
+        "instagram": "@sambetancurt",
+        "instagramEnlace": "https://www.instagram.com/sambetancurt/",
+        "correo": "strejos@unal.edu.co"
+      },
+      "canalWhatsapp": "https://whatsapp.com/channel/0029VbBtoCFBvvscToG1Yn0u",
+      "driveRecursos": "https://drive.google.com/drive/folders/1VGnbVtYyd9x-ul9btdpgqwR2juEgQ9sO?usp=sharing",
+      "gruposEstudiantiles": "https://chat.whatsapp.com/LPBgvaI49rU6ep6v5ycufZ"
+    },
+    "facultad": {
+      "cargo": "Representación Estudiantil de Facultad de Arquitectura",
+      "principal": {
+        "nombre": "Angélica Díaz López",
+        "cargo": "Representante de Facultad Principal",
+        "whatsapp": "+57 3193867283",
+        "whatsappEnlace": "https://wa.me/573193867283",
+        "instagram": "@dl_ang",
+        "instagramEnlace": "https://www.instagram.com/dl_ang/",
+        "correo": "andiazlo@unal.edu.co"
+      },
+      "suplente": {
+        "nombre": "Juan Pablo Marín Calderón",
+        "cargo": "Representante de Facultad Suplente",
+        "whatsapp": "+57 3045680511",
+        "whatsappEnlace": "https://wa.me/573045680511",
+        "instagram": "@troublep1",
+        "instagramEnlace": "https://www.instagram.com/troublep1/",
+        "correo": "juamarinca@unal.edu.co"
+      }
+    }
+  },
+  "fuentes": [
+    {
+      "titulo": "Pregrado en Arquitectura · Facultad de Arquitectura UNAL",
+      "url": "https://arquitectura.medellin.unal.edu.co/pregrado-de-arquitectura"
+    },
+    {
+      "titulo": "Trámites Estudiantiles · Secretaría de Facultad de Arquitectura",
+      "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+    },
+    {
+      "titulo": "Canal de WhatsApp Oficial · Arquitectura UNAL",
+      "url": "https://whatsapp.com/channel/0029VbBtoCFBvvscToG1Yn0u"
+    },
+    {
+      "titulo": "Carpeta Oficial de Recursos (Google Drive)",
+      "url": "https://drive.google.com/drive/folders/1VGnbVtYyd9x-ul9btdpgqwR2juEgQ9sO?usp=sharing"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "semestre": 1,
+    "creditos": 23,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011119"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006605"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3007211"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006615"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 3,
+        "nombre": "Libre Elección 1"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "IDIOMA-1"
+      }
+    ]
+  },
+  {
+    "semestre": 2,
+    "creditos": 23,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011120"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006601"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006600"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006622"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006616"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 3,
+        "nombre": "Libre Elección 2"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "IDIOMA-2"
+      }
+    ]
+  },
+  {
+    "semestre": 3,
+    "creditos": 23,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011121"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006602"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006627"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006623"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006617"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 3,
+        "nombre": "Libre Elección 3"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "IDIOMA-3"
+      }
+    ]
+  },
+  {
+    "semestre": 4,
+    "creditos": 21,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011122"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006603"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006793"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006624"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006618"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 3,
+        "nombre": "Libre Elección 4"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "IDIOMA-4"
+      }
+    ]
+  },
+  {
+    "semestre": 5,
+    "creditos": 18,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011123"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006604"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006628"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006625"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006619"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 3,
+        "nombre": "Libre Elección 5"
+      }
+    ]
+  },
+  {
+    "semestre": 6,
+    "creditos": 19,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011124"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006792"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006629"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3007372"
+      },
+      {
+        "tipo": "asignatura",
+        "codigo": "3006620"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 3,
+        "nombre": "Libre Elección 6"
+      }
+    ]
+  },
+  {
+    "semestre": 7,
+    "creditos": 16,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011125"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "optativas-disciplinares",
+        "creditos": 6,
+        "nombre": "Optativa 1",
+        "prerrequisitos": [
+          "3006792"
+        ]
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 4,
+        "nombre": "Libre Elección 7"
+      }
+    ]
+  },
+  {
+    "semestre": 8,
+    "creditos": 16,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011126"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "optativas-disciplinares",
+        "creditos": 6,
+        "nombre": "Optativa 2"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 4,
+        "nombre": "Libre Elección 8"
+      }
+    ]
+  },
+  {
+    "semestre": 9,
+    "creditos": 15,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3011127"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "optativas-disciplinares",
+        "creditos": 4,
+        "nombre": "Optativa 3"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 5,
+        "nombre": "Libre Elección 9"
+      }
+    ]
+  },
+  {
+    "semestre": 10,
+    "creditos": 16,
+    "items": [
+      {
+        "tipo": "asignatura",
+        "codigo": "3006794"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "optativas-disciplinares",
+        "creditos": 4,
+        "nombre": "Optativa 4"
+      },
+      {
+        "tipo": "bolsa",
+        "agrupacion": "libre-eleccion-materias",
+        "creditos": 6,
+        "nombre": "Libre Elección 10"
+      }
+    ]
+  }
+]

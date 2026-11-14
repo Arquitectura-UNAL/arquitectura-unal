@@ -1,0 +1,82 @@
+[
+  {
+    "id": "grupos-capitulos-arquitectura",
+    "nombre": "Grupos y Capítulos Estudiantiles de Arquitectura",
+    "tipo": "Comunidad Estudiantil",
+    "subtipo": "Capítulos, Colectivos y Redes de Arquitectura",
+    "director": "Comunidad y Representación Estudiantil",
+    "color": "#132A49",
+    "enlace": "https://chat.whatsapp.com/LPBgvaI49rU6ep6v5ycufZ",
+    "enlaceTexto": "Unirse al Grupo de WhatsApp",
+    "descripcion": "Espacio articulador de los colectivos, capítulos estudiantiles y grupos de trabajo de la carrera de Arquitectura en la UNAL Medellín para proyectos, talleres, eventos y trabajo colaborativo.",
+    "lineas": [
+      "Capítulos estudiantiles y colectivos proyectuales",
+      "Eventos, exposiciones y talleres extracurriculares",
+      "Redes de apoyo académico y debate arquitectónico"
+    ]
+  },
+  {
+    "id": "semillero-estudios-espaciales",
+    "nombre": "Estudios Espaciales",
+    "tipo": "Semillero de Investigación",
+    "subtipo": "Espacio, Teoría y Creación Proyectual",
+    "director": "Escuela de Arquitectura · Grupo de Investigación",
+    "color": "#015E97",
+    "enlace": "http://www.hermes.unal.edu.co/",
+    "enlaceTexto": "Consultar en Sistema Hermes",
+    "descripcion": "Espacio investigativo que aborda el estudio del espacio en un campo semántico ampliado que cruza la arquitectura, el arte, la fenomenología, la estética y el paisaje.",
+    "lineas": [
+      "Morfología espacial y teoría del proyecto",
+      "Relación entre espacio, estética y percepción",
+      "Investigación-creación en arquitectura contemporánea"
+    ]
+  },
+  {
+    "id": "semillero-geo-clima",
+    "nombre": "Arquitectura: Geo-Clima y Vida Cotidiana",
+    "tipo": "Semillero de Investigación",
+    "subtipo": "Bioclimática y Contexto Territorial",
+    "director": "Docentes Área Bioclimática y Hábitat",
+    "color": "#F09A23",
+    "enlace": "http://www.hermes.unal.edu.co/",
+    "enlaceTexto": "Consultar en Sistema Hermes",
+    "descripcion": "Indaga las reciprocidades y tensiones entre el objeto arquitectónico, las condiciones geoclimáticas de los valles andinos y la vida cotidiana de las comunidades.",
+    "lineas": [
+      "Diseño bioclimático adaptado al trópico",
+      "Confort térmico y vida cotidiana urbana",
+      "Técnicas pasivas y resiliencia climática"
+    ]
+  },
+  {
+    "id": "semillero-chagra",
+    "nombre": "Semillero CHAGRA",
+    "tipo": "Semillero de Investigación y Extensión",
+    "subtipo": "Agroecología, Hábitat y Territorio",
+    "director": "Escuela del Hábitat (CEHAP)",
+    "color": "#E1432A",
+    "enlace": "https://arquitectura.medellin.unal.edu.co/escuelas/escuelas",
+    "enlaceTexto": "Conocer en Escuela del Hábitat",
+    "descripcion": "Articula la arquitectura y la educación ambiental con la producción social del hábitat, soberanía comunitaria y rescate de técnicas tradicionales y agroecológicas.",
+    "lineas": [
+      "Producción social del hábitat y justicia socioespacial",
+      "Tecnologías constructivas comunitarias y apropiadas",
+      "Educación ambiental y pedagogía del territorio"
+    ]
+  },
+  {
+    "id": "semillero-formacion-arquitectura",
+    "nombre": "Formación en Arquitectura",
+    "tipo": "Semillero de Investigación",
+    "subtipo": "Pedagogía y Epistemología Proyectual",
+    "director": "Escuela de Arquitectura",
+    "color": "#1B385E",
+    "enlace": "https://arquitectura.medellin.unal.edu.co/",
+    "enlaceTexto": "Consultar en Facultad de Arquitectura",
+    "descripcion": "Centrado en el análisis crítico de los planes de estudio, la didáctica del taller de proyectos y las metodologías pedagógicas en la enseñanza moderna de la arquitectura.",
+    "lineas": [
+      "Epistemología y enseñanza del proyecto arquitectónico",
+      "Evaluación curricular y metodologías de diseño",
+      "Historia de la educación arquitectónica en Colombia"
+    ]
+  }
+]

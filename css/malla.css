@@ -1,0 +1,1326 @@
+/* =========================================================
+   MÓDULO MALLA CURRICULAR — ESTILOS
+   1. Convenciones
+   2. Malla interactiva
+   3. Detalle de la asignatura
+   4. Catálogo por componente y paginación
+   ========================================================= */
+
+.contenedor--ancho { width: min(1500px, 100% - 32px); }
+.barra__escudo { border-radius: 50%; }
+
+
+/* ---------- 0. Apartado Unidad Compartida / Drive ---------- */
+
+.malla-drive {
+  max-width: 980px;
+  margin: 0 auto 48px;
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, var(--tierra) 60%, var(--carbon) 100%);
+  border-radius: 24px;
+  border: 1.5px solid var(--madera);
+  border-left: 8px solid var(--arena);
+  box-shadow: 0 18px 40px -12px rgba(19, 42, 73, 0.40), 0 0 24px rgba(178, 139, 107, 0.16);
+  padding: 26px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.malla-drive::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at top right, rgba(178, 139, 107, 0.25), transparent 70%);
+  pointer-events: none;
+}
+
+.malla-drive__contenido {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+}
+
+.malla-drive__icono-wrap {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid var(--lima-vibrante);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.malla-drive__logo {
+  display: block;
+}
+
+.malla-drive__cuerpo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.malla-drive__encabezado {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.malla-drive__tag {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--lima-vibrante);
+  background: rgba(213, 191, 165, 0.18);
+  border: 1px solid rgba(213, 191, 165, 0.5);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.malla-drive__titulo {
+  font-family: var(--letra-titulo);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.malla-drive__desc {
+  font-size: 14px;
+  color: var(--marfil);
+  line-height: 1.55;
+  margin-top: 4px;
+}
+
+.malla-drive__fila-acciones {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.malla-drive__btn-principal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--lima-vibrante);
+  color: var(--cafe-profundo) !important;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(213, 191, 165, .4);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+
+.malla-drive__btn-principal:hover {
+  background: var(--marfil);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(213, 191, 165, .55);
+}
+
+.malla-drive__btn-principal svg {
+  flex-shrink: 0;
+  color: var(--cafe-profundo);
+}
+
+.malla-drive__acceso-secundario {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+}
+
+.malla-drive__acceso-pregunta {
+  color: var(--lima-suave);
+}
+
+.malla-drive__acceso-enlace {
+  color: var(--turquesa);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color .15s, text-decoration .15s;
+}
+
+.malla-drive__acceso-enlace:hover {
+  color: var(--lima-vibrante);
+  text-decoration: underline;
+}
+
+.malla-drive__acceso-enlace svg {
+  flex-shrink: 0;
+}
+
+.malla-drive__nota {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba(75, 64, 56, 0.65);
+  font-size: 12.5px;
+  color: var(--marfil);
+  line-height: 1.4;
+  border-left: 3px solid var(--turquesa);
+}
+
+.malla-drive__nota svg {
+  color: var(--turquesa);
+  flex-shrink: 0;
+}
+
+.malla-drive__nota strong {
+  color: var(--lima-vibrante);
+}
+
+
+/* ---------- 1. Convenciones ---------- */
+
+.leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 26px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: var(--tinta-suave);
+}
+.leyenda li { display: inline-flex; align-items: center; gap: 8px; }
+.leyenda__punto {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color);
+}
+.leyenda__aro {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 3px solid var(--color);
+  background: #fff;
+}
+
+
+/* ---------- 2. Malla interactiva ---------- */
+
+.malla__marco {
+  padding: 16px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 30px -20px rgba(10, 44, 82, .55);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+.malla__ayuda { margin-top: 12px; text-align: center; font-size: 13px; color: var(--gris); }
+
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(154px, 1fr));
+  gap: 12px;
+  min-width: 1620px;
+}
+
+.semestre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-radius: 14px;
+  background: var(--marfil);
+}
+.semestre__cabeza {
+  padding: 10px 6px 8px;
+  text-align: center;
+  border-bottom: 2px solid var(--linea);
+}
+.semestre__cabeza h3 {
+  font-family: var(--letra-universidad);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .06em;
+  color: var(--azul-marino);
+}
+.semestre__cabeza p {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gris);
+}
+.semestre__lista {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0 8px;
+  list-style: none;
+}
+/* La asignatura de proyectos va siempre al final de la columna, como en el PDF */
+.semestre__lista li:last-child:has(.materia[data-agrupacion="proyectos"], .materia[data-agrupacion="trabajo-grado"]) { margin-top: auto; }
+
+.materia {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 36px;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  min-height: 76px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(10, 44, 82, .22);
+  overflow: hidden;
+  text-align: left;
+  transition: opacity .2s ease, transform .15s ease, box-shadow .15s ease, filter .2s ease;
+}
+.materia:hover { transform: translateY(-2px); box-shadow: 0 6px 14px -6px rgba(10, 44, 82, .5); }
+.materia:focus-visible { outline: 3px solid var(--azul-marino); outline-offset: 2px; }
+
+.materia__nombre {
+  padding: 8px 8px 4px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--tinta);
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+.materia__cred {
+  grid-row: 1 / 3;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color);
+  font-family: var(--letra-titulo);
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  width: 36px;
+  min-width: 36px;
+  flex-shrink: 0;
+}
+.materia__codigo {
+  padding: 3px 8px;
+  background: var(--arena-lino);
+  font-size: 11px;
+  letter-spacing: .02em;
+  color: var(--tinta-suave);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.materia--bolsa .materia__nombre { font-size: 12px; color: var(--tinta-suave); }
+.materia--bolsa .materia__codigo { background: var(--marfil); font-style: italic; }
+
+/* Al pasar el cursor o elegir una materia, el resto se atenúa y se marcan sus relaciones en colores */
+.rejilla.hay-seleccion .materia {
+  opacity: .25;
+  filter: grayscale(35%);
+}
+
+.rejilla.hay-seleccion .materia.es-seleccion,
+.rejilla.hay-seleccion .materia.es-prerreq,
+.rejilla.hay-seleccion .materia.es-dependiente {
+  opacity: 1;
+  filter: none;
+}
+
+/* 1. Materia activa (bajo el cursor o seleccionada) */
+.materia.es-seleccion {
+  outline: 3.5px solid var(--azul-marino);
+  outline-offset: 2px;
+  transform: translateY(-3px);
+  z-index: 10;
+  box-shadow: 0 10px 24px -4px rgba(10, 44, 82, .55);
+}
+
+.materia.es-seleccion .materia__codigo {
+  background: var(--azul-marino);
+  color: #fff;
+  font-weight: 600;
+}
+
+.materia.es-seleccion .materia__codigo::after {
+  content: " · Esta materia";
+  color: var(--arena-lino);
+  font-weight: 600;
+}
+
+/* 2. Prerrequisitos (en color ámbar / dorado) */
+.materia.es-prerreq {
+  outline: 3.5px solid var(--arcilla);
+  outline-offset: 2px;
+  transform: translateY(-2px);
+  z-index: 8;
+  box-shadow: 0 8px 20px -4px rgba(121, 84, 70, .5);
+}
+
+.materia.es-prerreq .materia__codigo {
+  background: var(--marfil);
+  color: var(--carbon);
+  font-weight: 700;
+}
+
+.materia.es-prerreq .materia__codigo::after {
+  content: " · Prerrequisito";
+  color: var(--arcilla);
+  font-weight: 700;
+}
+
+/* 3. Lo que te abre (en madera cálida / paleta tierra) */
+.materia.es-dependiente {
+  outline: 3.5px solid var(--madera);
+  outline-offset: 2px;
+  transform: translateY(-2px);
+  z-index: 8;
+  box-shadow: 0 8px 20px -4px rgba(178, 139, 107, .5);
+}
+
+.materia.es-dependiente .materia__codigo {
+  background: var(--marfil);
+  color: var(--cafe-profundo);
+  font-weight: 700;
+}
+
+.materia.es-dependiente .materia__codigo::after {
+  content: " · Te abre";
+  color: var(--tierra);
+  font-weight: 700;
+}
+
+
+/* ---------- 3. Detalle de la asignatura ---------- */
+
+.detalle {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  z-index: 30;
+  width: min(980px, 100% - 24px);
+  max-height: 46vh;
+  overflow: auto;
+  translate: -50% 0;
+  padding: 22px 26px 24px;
+  border-radius: 20px;
+  border-top: 8px solid var(--color, var(--cafe-profundo));
+  background: #fff;
+  box-shadow: 0 -10px 40px -6px rgba(75, 64, 56, .35), 0 0 0 1px rgba(75, 64, 56, .1);
+  animation: subir .22s ease-out;
+}
+@keyframes subir {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+body.con-detalle { padding-bottom: 44vh; }
+
+.detalle__cerrar {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: #eef1f5;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--tinta-suave);
+}
+.detalle__cerrar:hover { background: #dde3ea; }
+
+.detalle__cabeza { padding-right: 44px; }
+.detalle__codigo-fila {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+.detalle__codigo-grupo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.detalle__codigo {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin: 0;
+}
+
+/* Easter Egg: Camaleón Pascal (Topografía) */
+.pascal-widget {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pascal-camaleon {
+  background: transparent;
+  border: none;
+  padding: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.95;
+  transition: transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
+  position: relative;
+}
+
+.pascal-camaleon:hover {
+  opacity: 1;
+  transform: scale(1.12) translateY(-2px);
+}
+
+.pascal-camaleon:active {
+  transform: scale(0.92);
+}
+
+.pascal-camaleon.is-pulsing {
+  animation: pascalPop 0.28s ease-out;
+}
+
+.pascal-camaleon.is-playing {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(148, 145, 78, 0.7));
+}
+
+.pascal-pixel-svg {
+  display: block;
+  width: 52px;
+  height: 43px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@keyframes pascalPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.22) rotate(-5deg); }
+  100% { transform: scale(1); }
+}
+
+.pascal-camaleon__particulas {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  pointer-events: none;
+}
+
+.pascal-nota {
+  position: absolute;
+  font-size: 13px;
+  animation: pascalFloat 1.8s ease-out forwards;
+  animation-delay: var(--delay, 0s);
+  opacity: 0;
+}
+
+@keyframes pascalFloat {
+  0% { opacity: 0; transform: translate(var(--x, 0), 0) scale(0.6); }
+  25% { opacity: 1; transform: translate(var(--x, 0), -12px) scale(1.1); }
+  100% { opacity: 0; transform: translate(calc(var(--x, 0) * 1.5), -28px) scale(0.8); }
+}
+
+/* Reproductor flotante discreto */
+.pascal-player {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9998;
+  background: rgba(51, 54, 59, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(228, 220, 199, 0.22);
+  border-radius: 999px;
+  padding: 8px 14px 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.pascal-player.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.pascal-player__icono {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--oliva);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  animation: pascalSpin 3s linear infinite;
+}
+
+@keyframes pascalSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pascal-player__info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.pascal-player__titulo {
+  font-family: var(--letra-titulo);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pascal-player__sub {
+  font-size: 10.5px;
+  color: var(--arena-lino);
+  opacity: 0.85;
+}
+
+.pascal-player__btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.pascal-player__btn:hover {
+  background: var(--arcilla);
+  transform: scale(1.08);
+}
+
+.pascal-player__cerrar {
+  background: transparent;
+  border: none;
+  color: var(--arena-lino);
+  cursor: pointer;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+  opacity: 0.75;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.pascal-player__cerrar:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+.detalle h3 {
+  margin-top: 2px;
+  font-family: var(--letra-titulo);
+  font-weight: 400;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.1;
+  color: var(--azul-marino);
+}
+
+.etiquetas { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #eef3f9;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--azul-marino);
+}
+.etiqueta--comp { background: var(--color); color: #fff; }
+.etiqueta--cred { background: var(--azul-marino); color: #fff; }
+.etiqueta--wpp {
+  background: #e7f9ee !important;
+  border: 1px solid #9fe5be;
+  padding: 0 !important;
+}
+.etiqueta--wpp a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  color: #0b6b3a !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+.etiqueta--wpp a:hover {
+  color: #064e29 !important;
+}
+
+.detalle__cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 32px;
+  margin-top: 18px;
+}
+.detalle__bloque h4 {
+  margin-bottom: 8px;
+  font-family: var(--letra-universidad);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+.detalle__vacio { font-size: 15px; color: var(--tinta-suave); }
+.fichas { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.ficha-materia {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 6px 6px;
+  border: 2px solid var(--azul);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: var(--tinta);
+}
+.ficha-materia::before {
+  content: '';
+  width: 10px;
+  height: 22px;
+  border-radius: 4px;
+  background: var(--color);
+}
+.ficha-materia:hover { background: #eaf3fd; }
+.ficha-materia--prerreq { border-color: var(--arcilla); }
+.ficha-materia small { color: var(--gris); font-weight: 400; }
+
+.detalle__avance { margin: 8px 0 0; padding-left: 18px; font-size: 15px; color: var(--tinta-suave); }
+.detalle__confirmar {
+  grid-column: 1 / -1;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #fff7e0;
+  border: 1px solid #f1d58a;
+  font-size: 14px;
+  color: #6b5200;
+}
+.detalle__boton {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--azul);
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.detalle__boton:hover { background: var(--azul-oscuro); }
+
+.detalle__bloque--whatsapp {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: linear-gradient(135deg, #effaf3 0%, #f7fdf9 100%);
+  border: 1.5px solid #a3e9c0;
+  border-radius: 16px;
+  padding: 14px 18px;
+}
+.detalle__bloque--whatsapp h4 {
+  color: #0b6b3a !important;
+  margin-bottom: 0 !important;
+  font-weight: 700;
+  font-size: 12px;
+}
+.detalle__whatsapp-boton {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #fff !important;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, .35);
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+}
+.detalle__whatsapp-boton:hover {
+  background: #1eb855;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, .45);
+}
+.detalle__whatsapp-boton svg {
+  flex-shrink: 0;
+}
+
+.tarjeta__wpp {
+  color: #0d8448;
+  font-weight: 600;
+}
+.materia__wpp-punto {
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 10px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+
+/* ---------- 4. Catálogo por componente y paginación ---------- */
+
+.asignaturas { background: #e3ede6; }
+
+.pestanas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.pestana {
+  padding: 11px 22px;
+  border: 2px solid var(--color);
+  border-radius: 999px;
+  background: #fff;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--tinta);
+  transition: background .15s, color .15s;
+}
+.pestana:hover { background: color-mix(in srgb, var(--color) 14%, #fff); }
+.pestana[aria-selected="true"] { background: var(--color); color: #fff; }
+.pestana:focus-visible, .pildora:focus-visible, .pag__boton:focus-visible,
+.ficha-materia:focus-visible, .detalle__cerrar:focus-visible, .detalle__boton:focus-visible,
+.tarjeta:focus-visible { outline: 3px solid var(--azul-marino); outline-offset: 2px; }
+
+.agrupaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.pildora {
+  padding: 7px 16px;
+  border: 1px solid #b9c4d2;
+  border-radius: 999px;
+  background: #f6f8fb;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tinta-suave);
+}
+.pildora:hover { border-color: var(--azul); color: var(--azul); }
+.pildora[aria-pressed="true"] { border-color: var(--azul-marino); background: var(--azul-marino); color: #fff; }
+
+.resumen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 24px;
+  margin: 22px 0 18px;
+  font-size: 15px;
+  color: var(--tinta-suave);
+}
+.resumen strong { color: var(--azul-marino); }
+.resumen__oblig { color: #b4232c; }
+.resumen__optat { color: #00897b; }
+.filtro { display: inline-flex; border: 2px solid var(--azul); border-radius: 999px; overflow: hidden; background: #fff; }
+.filtro button {
+  padding: 5px 14px;
+  border: 0;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--azul);
+}
+.filtro button[aria-pressed="true"] { background: var(--azul); color: #fff; }
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 16px 16px 14px;
+  border: 0;
+  border-left: 8px solid var(--color);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 16px -12px rgba(10, 44, 82, .6);
+  text-align: left;
+  transition: transform .15s, box-shadow .15s;
+  animation: aparecer .25s ease-out both;
+}
+.tarjeta:hover { transform: translateY(-3px); box-shadow: 0 12px 22px -12px rgba(10, 44, 82, .55); }
+.tarjeta__nombre { flex: 1; font-size: 16px; font-weight: 600; line-height: 1.25; color: var(--azul-marino); }
+.tarjeta__pie { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--gris); }
+.tarjeta__tipo { font-weight: 600; }
+.tarjeta__cred {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: var(--color);
+  font-family: var(--letra-titulo);
+  font-size: 14px;
+  color: #fff;
+}
+
+.paginacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+.pag__boton {
+  min-width: 42px;
+  height: 42px;
+  padding: 0 14px;
+  border: 2px solid var(--azul);
+  border-radius: 999px;
+  background: #fff;
+  font-weight: 600;
+  color: var(--azul);
+}
+.pag__boton:hover:not(:disabled) { background: #eaf3fd; }
+.pag__boton[aria-current="page"] { background: var(--azul); color: #fff; }
+.pag__boton:disabled { opacity: .4; cursor: not-allowed; }
+.pag__info { width: 100%; text-align: center; font-size: 13px; color: var(--gris); }
+.pag__puntos { color: var(--gris); }
+
+.catalogo__vacio {
+  grid-column: 1 / -1;
+  padding: 28px;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+  color: var(--tinta-suave);
+}
+
+
+@media (max-width: 720px) {
+  .malla-drive {
+    padding: 18px 16px;
+    margin-bottom: 32px;
+  }
+  .malla-drive__contenido {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .malla-drive__fila-acciones {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .malla-drive__btn-principal {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+  .malla-drive__acceso-secundario {
+    justify-content: center;
+    font-size: 13px;
+  }
+  .malla-drive__nota {
+    font-size: 12px;
+  }
+  .detalle { padding: 18px 16px 20px; max-height: 58vh; }
+  .detalle__cuerpo { grid-template-columns: 1fr; }
+  body.con-detalle { padding-bottom: 56vh; }
+  .catalogo { grid-template-columns: 1fr; }
+}
+
+/* ---------- Aviso de Malla Sugerida ---------- */
+.malla__aviso-sugerida {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px auto 0;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--papel, #ffffff);
+  border: 1px solid var(--linea, rgba(0, 0, 0, 0.1));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-family: var(--letra-texto, sans-serif);
+  font-size: 13px;
+  color: var(--tinta-suave, #555555);
+  line-height: 1.45;
+  text-align: center;
+}
+
+.malla__aviso-sugerida svg {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  color: var(--color-primario, var(--azul, currentColor));
+}
+
+
+/* ==============================================================================
+   PROGRESO DEL ESTUDIANTE EN LA MALLA (CONSTRUCCIÓN)
+   ============================================================================== */
+
+/* ---------- Barra de Sesión de Progreso en la Malla ---------- */
+.malla-sesion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--linea, #D5CCB6);
+  border-left: 5px solid var(--arcilla, #132A49);
+  box-shadow: 0 10px 26px -12px rgba(51, 54, 59, .16), 0 2px 6px rgba(0, 0, 0, .04);
+  padding: 16px 22px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.malla-sesion__info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.malla-sesion__icono {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--marfil, #F5F1E8);
+  border: 1.5px solid var(--arena-lino, #E4DCC7);
+  color: var(--arcilla, #132A49);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.malla-sesion__icono svg {
+  width: 22px;
+  height: 22px;
+}
+
+.malla-sesion__textos {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.malla-sesion__fila-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.malla-sesion__etiqueta {
+  font-family: var(--letra-titulo);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--arcilla, #132A49);
+  font-weight: 700;
+}
+
+.malla-sesion__usuario {
+  font-family: var(--letra-titulo);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--carbon, #33363B);
+}
+
+.malla-sesion__resumen-texto {
+  margin: 0;
+  font-size: 13px;
+  color: var(--cemento-calido, #7D7660);
+}
+
+.malla-sesion__acciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.malla-sesion__btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--linea, #D5CCB6);
+  background: var(--papel, #FAF8F5);
+  font-family: var(--letra-titulo);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--carbon, #33363B);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.malla-sesion__btn-toggle:hover {
+  background: #ede6d8;
+}
+
+.malla-sesion__btn-toggle-switch {
+  width: 32px;
+  height: 18px;
+  border-radius: 999px;
+  background: #cbd5e1;
+  position: relative;
+  transition: background .2s ease;
+}
+
+.malla-sesion__btn-toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform .2s ease;
+}
+
+.malla-sesion__btn-toggle.is-activo .malla-sesion__btn-toggle-switch {
+  background: var(--arcilla, #132A49);
+}
+
+.malla-sesion__btn-toggle.is-activo .malla-sesion__btn-toggle-switch::after {
+  transform: translateX(14px);
+}
+
+.malla-sesion__enlace-avance {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--carbon, #33363B);
+  color: #ffffff;
+  font-family: var(--letra-titulo);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(51, 54, 59, 0.25);
+  transition: all .2s ease;
+}
+
+.malla-sesion__enlace-avance:hover {
+  background: var(--arcilla, #132A49);
+  transform: translateY(-1px);
+}
+
+/* ---------- Banner Invitado (Sin Avance Cargado) ---------- */
+.malla-invitado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fbf9f5;
+  border: 1px dashed var(--arcilla, #132A49);
+  border-radius: 14px;
+  padding: 14px 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.malla-invitado__icono {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(121, 84, 70, 0.15);
+  color: var(--arcilla, #132A49);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.malla-invitado__icono svg {
+  width: 20px;
+  height: 20px;
+}
+
+.malla-invitado__cuerpo {
+  flex: 1;
+  min-width: 240px;
+}
+
+.malla-invitado__texto {
+  margin: 0;
+  font-size: 13px;
+  color: var(--carbon, #33363B);
+  line-height: 1.45;
+}
+
+.malla-invitado__btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--arcilla, #132A49);
+  color: #fff;
+  font-family: var(--letra-titulo);
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.malla-invitado__btn:hover {
+  background: #5e3f34;
+  transform: translateY(-1px);
+}
+
+/* ---------- Estilos de Materias Aprobadas y En Curso ---------- */
+.materia--aprobada {
+  background: color-mix(in srgb, var(--color) 16%, #ffffff) !important;
+  border: 1.5px solid color-mix(in srgb, var(--color) 45%, #ffffff) !important;
+  box-shadow: 0 2px 8px -2px color-mix(in srgb, var(--color) 35%, transparent), 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.materia--aprobada:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px -3px color-mix(in srgb, var(--color) 48%, transparent), 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.materia--aprobada .materia__nombre {
+  color: #1a1b1d;
+  font-weight: 600;
+}
+
+.materia--aprobada .materia__codigo {
+  background: color-mix(in srgb, var(--color) 26%, #ffffff) !important;
+  color: color-mix(in srgb, var(--color) 85%, #1a1b1d) !important;
+  font-weight: 600;
+}
+
+.materia--bolsa.materia--aprobada .materia__codigo {
+  font-style: normal;
+}
+
+.materia__tag-aprobada {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #15803d;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+.materia--en-curso {
+  background: #fffdf5 !important;
+  border: 1.5px dashed #d97706 !important;
+  box-shadow: 0 2px 7px -2px rgba(217, 119, 6, 0.25), 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+}
+
+.materia--en-curso .materia__nombre {
+  color: #78350f;
+  font-weight: 600;
+}
+
+.materia--en-curso .materia__codigo {
+  background: #fef3c7 !important;
+  color: #b45309 !important;
+  font-weight: 600;
+}
+
+.materia__tag-curso {
+  font-size: 10px;
+  color: #b45309;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+.leyenda__punto--aprobada {
+  background: #16a34a !important;
+  box-shadow: 0 0 6px rgba(22, 163, 74, 0.6);
+}
+
+.leyenda__punto--curso {
+  background: #d97706 !important;
+  box-shadow: 0 0 6px rgba(217, 119, 6, 0.6);
+}
+
+@media (max-width: 640px) {
+  .malla-sesion {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 14px 16px;
+  }
+  .malla-sesion__acciones {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .malla-invitado {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .malla-invitado__btn {
+    text-align: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "titulo": "Perfil del arquitecto egresado de la UNAL Medellín",
+  "intro": "Un profesional formado en la Facultad de Arquitectura de la Universidad Nacional de Colombia Sede Medellín, con rigurosa base científica, proyectual, tecnológica, estética y humanística para liderar el diseño del espacio, el hábitat, las ciudades y el territorio con profunda responsabilidad ética y ambiental.",
+  "rasgos": [
+    {
+      "icono": "ciencia",
+      "titulo": "Aptitud proyectual y ciencia del diseño",
+      "texto": "Domina la ciencia del proyecto como método de investigación y creación espacial, resolviendo con excelencia formal, funcional y técnica obras de alta complejidad arquitectónica y urbana."
+    },
+    {
+      "icono": "equipo",
+      "titulo": "Planificación urbana, territorio y hábitat",
+      "texto": "Formula propuestas de ordenamiento territorial, planes maestros, espacio público y hábitat colectivo integrando análisis sociodemográficos, geoclimáticos y normativos para el desarrollo equilibrado de la ciudad."
+    },
+    {
+      "icono": "gestion",
+      "titulo": "Sustentabilidad ambiental y arquitectura bioclimática",
+      "texto": "Aplica estrategias de diseño pasivo, eficiencia energética, confort térmico e instrumentación ambiental adaptadas al clima tropical y a las demandas de resiliencia frente a la crisis climática."
+    },
+    {
+      "icono": "empresa",
+      "titulo": "Historia, patrimonio, tecnología y obra",
+      "texto": "Interviene críticamente en el patrimonio arquitectónico y urbano edificado, articulando la investigación histórica con tecnologías constructivas contemporáneas, modelamiento BIM y ejecución técnica rigurosa de obra."
+    }
+  ],
+  "fuente": "Proyecto Educativo del Programa (PEP) de Arquitectura · Acuerdo CF-0001 de 2024 · Facultad de Arquitectura, Sede Medellín."
+}
