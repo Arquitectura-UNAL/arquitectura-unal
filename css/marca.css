@@ -1,0 +1,300 @@
+/* =========================================================
+   MARCA · "PAPEL Y TINTA"
+   Capa de identidad y calma visual. Se carga al final de cada página.
+
+   Idea: el búho que dibuja. Papel de dibujo (crema), tinta (azul oscuro),
+   un solo acento (el naranja del lápiz) y el azul acero del búho.
+   Menos adornos técnicos, más aire, una jerarquía fija:
+   etiqueta → título → texto → contenido.
+
+   1. Tokens de marca
+   2. Ruido decorativo fuera
+   3. Barra superior
+   4. Portada
+   5. Secciones: ritmo y jerarquía
+   6. Tarjetas más tranquilas
+   7. Divulgación progresiva (detalles que se abren)
+   8. Mensaje del autor y pie
+   9. Movimiento reducido
+   ========================================================= */
+
+
+/* ---------- 1. Tokens de marca ---------- */
+:root {
+  --marca-tinta: #132A49;          /* texto y fondos oscuros */
+  --marca-buho: #456B92;           /* azul acero del logo */
+  --marca-buho-claro: #4880B0;     /* azul del plano enrollado */
+  --marca-lapiz: #F09A23;          /* único acento cálido */
+  --marca-papel: #F1ECD6;          /* amarillo papel de dibujo */
+  --marca-papel-suave: #FAF7EE;
+  --marca-linea: #DDD4BE;
+
+  --marca-radio: 18px;
+  --marca-radio-chico: 10px;
+  --marca-aire: clamp(72px, 9vw, 120px);   /* espacio entre secciones */
+  --marca-lectura: 64ch;                    /* ancho cómodo de lectura */
+  --marca-sombra: 0 1px 2px rgba(19, 42, 73, .06), 0 8px 24px -12px rgba(19, 42, 73, .18);
+}
+
+
+/* ---------- 2. Ruido decorativo fuera ----------
+   Cotas, miras, escalímetro, marcas de agua: bonito una vez, agotador en cada bloque. */
+.mira-plano,
+.barra__mira,
+.barra__escalimetro,
+.cota-eje,
+.ruta-bento__watermark,
+.portada__acuerdo-tag,
+.cajetin-proyecto,
+.plano-marco::before,
+.plano-marco::after {
+  display: none !important;
+}
+
+
+/* ---------- 3. Barra superior ---------- */
+.barra__escudo-img {
+  border-radius: 50%;
+  background: var(--marca-papel-suave);
+}
+.barra__facultad { opacity: .75; }
+
+
+/* ---------- 4. Portada: una idea, mucho aire ---------- */
+.portada {
+  min-height: min(86vh, 760px);
+  display: grid;
+  align-items: center;
+}
+.portada__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+  padding-block: clamp(48px, 8vw, 96px);
+}
+.portada__lugar {
+  order: 3;
+  margin: 0;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(241, 236, 214, .8);
+}
+.portada__logo-wrap {
+  order: 1;
+  width: clamp(132px, 16vw, 176px);
+  height: clamp(132px, 16vw, 176px);
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: 0 0 0 6px rgba(241, 236, 214, .14), 0 18px 40px -12px rgba(0, 0, 0, .5);
+  border-radius: 50%;
+}
+.portada__logo {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50%;
+  display: block;
+}
+.portada__titulo { order: 2; display: flex; flex-direction: column; gap: 6px; }
+.portada__antetitulo {
+  color: var(--marca-lapiz) !important;
+  font-size: .85rem !important;
+  letter-spacing: .28em !important;
+  text-shadow: none !important;
+}
+.portada__texto {
+  order: 4;
+  max-width: 52ch;
+  margin: 0;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.65;
+  color: rgba(251, 249, 242, .92);
+}
+.portada__cifras {
+  order: 5;
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 28px !important;
+  margin: 8px 0 0 !important;
+  padding: 0;
+  list-style: none;
+}
+.cifra-plano {
+  background: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  text-shadow: none !important;
+}
+.cifra-plano small {
+  display: block;
+  margin-top: 2px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  opacity: .8;
+}
+/* La portada de cada página interna es más baja: el contenido manda */
+body:not([data-pagina="inicio"]) .portada { min-height: 0; }
+body:not([data-pagina="inicio"]) .portada__contenido { padding-block: clamp(36px, 5vw, 64px); gap: 14px; }
+body:not([data-pagina="inicio"]) .portada__logo-wrap { width: 96px; height: 96px; }
+
+
+/* ---------- 5. Secciones: ritmo y jerarquía ---------- */
+.seccion,
+.grupos {
+  padding-block: var(--marca-aire) !important;
+}
+.seccion-titulo {
+  max-width: 760px;
+  margin-inline: auto;
+  margin-bottom: clamp(32px, 5vw, 56px);
+  text-align: center;
+}
+.seccion-titulo h2,
+.seccion-titulo h3 {
+  font-family: var(--letra-titulo);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+/* Una sola firma gráfica: la línea de lápiz bajo cada título */
+.seccion-titulo h2::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin: 18px auto 0;
+  border-radius: 4px;
+  background: var(--marca-lapiz);
+}
+.seccion-titulo__intro {
+  max-width: var(--marca-lectura);
+  margin: 16px auto 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--tinta-suave);
+}
+.grupos .seccion-titulo__intro { color: rgba(241, 236, 214, .8); }
+
+/* Las líneas punteadas entre bloques sobran: el aire ya separa */
+.rutas-curriculares { margin-top: var(--marca-aire); }
+.programa hr, .seccion hr { display: none; }
+
+
+/* ---------- 6. Tarjetas más tranquilas ---------- */
+.plano-bloque,
+.ruta-bento,
+.fortaleza-card,
+.grupo-card,
+.ficha-especificaciones,
+.tablero-obra__tarjeta-vision {
+  border-radius: var(--marca-radio) !important;
+  box-shadow: var(--marca-sombra) !important;
+}
+.ruta-bento__tags { display: none; }          /* los detalles viven en la malla */
+.ruta-bento__descripcion {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.rutas__bento { gap: 20px !important; }
+.fortalezas-grid { gap: 28px !important; }
+
+/* Etiquetas y badges: más discretas, mismo lenguaje */
+.ruta-bento__badge,
+.grupo-card__tipo,
+.grupo-card__subtipo {
+  letter-spacing: .1em;
+  font-weight: 700;
+}
+.grupo-card__subtipo { display: none; }
+
+
+/* ---------- 7. Divulgación progresiva ---------- */
+.calma-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 8px 14px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: transparent;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  opacity: .9;
+  transition: opacity .2s, transform .2s;
+}
+.calma-toggle:hover { opacity: 1; transform: translateY(-1px); }
+.calma-toggle:focus-visible { outline: 3px solid var(--marca-lapiz); outline-offset: 2px; }
+.calma-toggle svg { width: 14px; height: 14px; transition: transform .25s; }
+.calma-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+.calma-oculto { display: none !important; }
+
+/* Fuentes: un renglón discreto que se abre si lo necesitas */
+details.calma-fuentes {
+  max-width: var(--marca-lectura);
+  margin: 40px auto 0;
+  font-size: .85rem;
+  color: var(--gris);
+  text-align: center;
+}
+details.calma-fuentes > summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+details.calma-fuentes > summary::-webkit-details-marker { display: none; }
+details.calma-fuentes > summary::after { content: ' +'; }
+details.calma-fuentes[open] > summary::after { content: ' –'; }
+details.calma-fuentes > p { margin-top: 10px; }
+
+
+/* ---------- 8. Mensaje del autor y pie ---------- */
+/* Deja de tapar el contenido: se abre como una pastilla pequeña */
+.toast-autor { max-width: min(360px, calc(100vw - 24px)); }
+.toast-autor__tarjeta { border-radius: var(--marca-radio); }
+.toast-autor__pildoras { flex-wrap: wrap; }
+
+.pie__escudo-img { border-radius: 50%; }
+
+
+/* ---------- 9. Movimiento reducido ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .portada { min-height: 0; }
+  .portada__cifras { gap: 10px 20px !important; }
+}
+
+/* El botón de instalar va al final de la portada, no antes del logo */
+.instalar-fila--portada { order: 6; }
+.portada__contenido > .boton-instalar,
+.portada__contenido > [data-instalar],
+.portada__contenido > button { order: 6; }
