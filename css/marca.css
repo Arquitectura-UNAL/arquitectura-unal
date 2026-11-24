@@ -298,3 +298,27 @@ details.calma-fuentes > p { margin-top: 10px; }
 .portada__contenido > .boton-instalar,
 .portada__contenido > [data-instalar],
 .portada__contenido > button { order: 6; }
+
+/* ---------- Próximamente ---------- */
+.proximamente {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 36px 28px;
+  text-align: center;
+  border: 1.5px dashed rgba(241, 236, 214, .35);
+  border-radius: var(--marca-radio);
+  color: rgba(241, 236, 214, .85);
+}
+.proximamente__sello {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--marca-lapiz);
+  color: var(--marca-tinta);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.proximamente p { margin: 0; line-height: 1.6; }
