@@ -643,7 +643,7 @@ function mostrarMensajeAutor() {
 
   setTimeout(() => {
     toast.classList.add('is-visible');
-  }, 700);
+  }, 20000);
 
   function cerrarToast() {
     toast.classList.remove('is-visible');
