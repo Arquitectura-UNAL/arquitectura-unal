@@ -538,9 +538,28 @@ function pintarPerfil(perfil) {
 
 /* ---------- 6. Grupos de Investigación y Semilleros ---------- */
 
+/* Mientras no haya grupos ni semilleros confirmados, la sección muestra "Próximamente".
+   Cuando existan, basta con poner esta bandera en false: los datos y las tarjetas siguen intactos. */
+const GRUPOS_PROXIMAMENTE = true;
+
 function pintarGrupos(grupos) {
   const contenido = $('#grupos-contenido');
   if (!contenido) return;
+
+  if (GRUPOS_PROXIMAMENTE) {
+    contenido.innerHTML = `
+    <div class="seccion-titulo seccion-titulo--comunidad">
+      <h2 id="grupos-titulo">Grupos de Investigación y Semilleros</h2>
+      <p class="seccion-titulo__intro">
+        Estamos reuniendo la información de los grupos y semilleros de la Facultad.
+      </p>
+    </div>
+    <div class="proximamente" role="status">
+      <span class="proximamente__sello">Próximamente</span>
+      <p>Muy pronto encontrarás aquí los grupos de investigación, semilleros y colectivos estudiantiles.</p>
+    </div>`;
+    return;
+  }
 
   const semilleros = grupos.filter(g => !g.id.includes('representacion'));
 

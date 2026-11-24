@@ -933,25 +933,9 @@ Puedes explorar sus prerrequisitos en la [Malla Curricular](malla.html).`,
     // ------------------------------------------------------------------------
     if (esConsultaSemillero || /grupos estudiantiles|investigacion en arquitectura|semilleros|estudios espaciales|geo clima|chagra/.test(preguntaNorm)) {
       return {
-        texto: `En el pregrado de **Arquitectura** contamos con semilleros y grupos de investigación muy destacados en la Facultad de Arquitectura:
+        texto: `La sección de **Grupos y Semilleros** está en construcción: estamos reuniendo la información confirmada de la Facultad y la publicaremos **próximamente**.
 
-1. **Grupos y Capítulos Estudiantiles de Arquitectura:**
-   - Comunidad estudiantil, eventos, colectivos y talleres proyectuales.
-   - [Unirse al Grupo de WhatsApp](` + ENLACES_OFICIALES.gruposWhatsapp + `)
-
-2. **Estudios Espaciales (Escuela de Arquitectura):**
-   - Morfología espacial, fenomenología, teoría del proyecto, arte y paisaje contemporáneo.
-
-3. **Arquitectura: Geo-Clima y Vida Cotidiana:**
-   - Diseño bioclimático adaptado a los valles andinos y trópico, confort térmico y vida cotidiana.
-
-4. **Semillero CHAGRA (Escuela del Hábitat - CEHAP):**
-   - Agroecología, producción social del hábitat, tecnologías comunitarias y educación ambiental.
-
-5. **Formación en Arquitectura:**
-   - Epistemología proyectual, pedagogía del taller de diseño y metodologías de enseñanza.
-
-Conoce más detalles en la sección [Grupos y Semilleros](index.html#grupos).`,
+Mientras tanto, puedes unirte a la comunidad estudiantil por WhatsApp: [Grupos y Capítulos](` + ENLACES_OFICIALES.gruposWhatsapp + `).`,
         chips: ['Canal Oficial WhatsApp', 'Grupos y Capítulos WhatsApp', 'Ver Malla Curricular'],
       };
     }
